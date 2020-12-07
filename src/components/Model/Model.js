@@ -8,7 +8,9 @@ import testImg from '../../assets/test.jpg';
 const Model = () => (
     <GContext.Consumer>
       {context=>(
-        <Modal show={context.showModel} onHide={()=>context.handleImgClick()} animation={false} className={styles.Model}>
+        <Modal     dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+        show={context.showModel} onHide={()=>context.handleImgClick()} animation={true} className={styles.Model}>
         <Modal.Header closeButton>
       <Modal.Title >{context.currentDescription}</Modal.Title>
         </Modal.Header>

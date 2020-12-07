@@ -14,7 +14,7 @@ h1 {
 }
   .content {
       margin: 15px;
-      max-width: 1300px;
+      max-width: 95%;
   }
 
   .peopleList {
@@ -51,3 +51,8 @@ h1 {
   .DigitRoll__Divider {
     width: 10px;
   }
+
+  .modal-90w {
+    width: 60%;
+    max-width: none!important;
+}
