@@ -1,0 +1,12 @@
+.AllGifts {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    overflow-y: scroll;
+    height: 77vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.AllGifts::-webkit-scrollbar {
+    display: none;
+  }

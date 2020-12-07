@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+    background: rgb(201, 60, 60);
+    /* background: rgb(15, 15, 15); */
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family: Arial, Helvetica, sans-serif !important;
+    /* color:yellow; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
+h1 {
+  font-family: Arial, Helvetica, sans-serif !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .content {
+      margin: 15px;
+      max-width: 1300px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .peopleList {
+    color: black;
+    overflow-y: scroll;
+    height: 77vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
-}
+
+  .peopleList::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+
+
+  .DigitRoll__Cell {
+    margin: 0 5px;
+    border: 1px solid brown;
+    border-radius: 5px;
+    background: peru;
+    font-size: 2rem;
+    color: white;
+    /* height: 6rem !important;
+    width: 6rem !important; */
+  }
+  
+  .DigitRoll {
+    border: none !important;
+    /* height: 6rem !important; */
+  }
+
+  .DigitRoll__Divider {
+    width: 10px;
+  }

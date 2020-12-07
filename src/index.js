@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+// import GiftBox from './components/GiftBox/GiftBox';
+// import AllGifts from './components/AllGifts/AllGifts';
+// import {FlipCard} from './FlipCard';
+import GlobalProvider from './globalContext';
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalProvider>
+      <App />
+      </GlobalProvider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
